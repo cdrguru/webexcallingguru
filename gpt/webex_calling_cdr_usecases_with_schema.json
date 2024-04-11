@@ -1,0 +1,542 @@
+[
+  {
+    "title": "Key Data Fields and Schema Structure",
+    "description": "Overview of the essential data fields in Cisco Webex Calling CDRs",
+    "content": [
+      {
+        "field": "Call Correlation ID",
+        "description": "Uniquely identifies a call session"
+      },
+      {
+        "field": "Calling/Called Line ID",
+        "description": "The phone numbers involved in the call"
+      },
+      {
+        "field": "Call Type",
+        "description": "Specifies the nature of the call (e.g., inbound, outbound)"
+      },
+      {
+        "field": "Call Direction",
+        "description": "Indicates whether the call was incoming or outgoing"
+      },
+      {
+        "field": "Duration",
+        "description": "The length of the call"
+      },
+      {
+        "field": "Answered",
+        "description": "A boolean indicating if the call was answered"
+      },
+      {
+        "field": "Start/End Time",
+        "description": "Timestamps for when the call began and ended"
+      },
+      {
+        "field": "User ID",
+        "description": "Identifies the user associated with the call"
+      }
+    ]
+  },
+  {
+    "title": "Types of Calls in CDRs",
+    "description": "Different types of calls captured in Webex Calling CDRs and their implications",
+    "content": [
+      {
+        "type": "Inbound Calls",
+        "description": "Calls received from an external number"
+      },
+      {
+        "type": "Outbound Calls",
+        "description": "Calls made to an external number"
+      },
+      {
+        "type": "Internal Calls",
+        "description": "Calls within the organization"
+      },
+      {
+        "type": "Missed Calls",
+        "description": "Inbound calls that were not answered"
+      }
+    ]
+  },
+  {
+    "title": "Retrieval-Augmented Generation (RAG) Techniques",
+    "description": "How RAG can enhance AI interaction with CDRs by integrating external data",
+    "content": [
+      "Integrate organizational hierarchies for internal call mapping",
+      "Incorporate external communication databases",
+      "Utilize customer interaction histories",
+      "Leverage industry-specific communication patterns through knowledge graphs"
+    ]
+  },
+  {
+    "title": "High-Level Structure for Knowledge Base",
+    "description": "Suggested sections for organizing the knowledge base content",
+    "content": [
+      "Overview of Webex Calling and CDR significance",
+      "Detailed explanation of key data fields",
+      "Types of calls and their business implications",
+      "RAG techniques and external data integration",
+      "Best practices for data management and security"
+    ]
+  },
+  {
+    "title": "AI-Powered Insights and Visualizations",
+    "description": "Examples of AI-generated insights and visualizations from Webex Calling CDR data",
+    "content": [
+      {
+        "insight": "Trend Analysis",
+        "description": "Visualize call volume trends over time to predict future activity"
+      },
+      {
+        "insight": "Communication Heatmaps",
+        "description": "Identify hotspots for call activities across different departments or geographies"
+      },
+      {
+        "insight": "Predictive Analytics",
+        "description": "Use historical data to forecast call volumes and optimize staffing"
+      },
+      {
+        "insight": "Sentiment Analysis",
+        "description": "Gauge customer sentiment from call metadata for customer service improvements"
+      }
+    ]
+  },
+  {
+    "title": "Webex Calling CDR Call Types",
+    "description": "Overview of the various call types captured in Webex Calling CDRs",
+    "content": [
+      {
+        "type": "SIP_MEETING",
+        "description": "Calls made via SIP to join a virtual meeting"
+      },
+      {
+        "type": "SIP_INTERNATIONAL",
+        "description": "International calls made over SIP"
+      },
+      {
+        "type": "SIP_INBOUND",
+        "description": "Incoming calls received over SIP"
+      }
+    ]
+  },
+  {
+    "title": "Key CDR Data Fields",
+    "description": "Explanation of how key CDR data fields are populated for each call type",
+    "content": [
+      {
+        "field": "Call Type",
+        "description": "Specifies the type of call (e.g., SIP_MEETING)"
+      },
+      {
+        "field": "Direction",
+        "description": "Indicates whether the call is inbound or outbound"
+      },
+      {
+        "field": "Dialed Digits",
+        "description": "The number that was dialed by the caller"
+      },
+      {
+        "field": "Called Number",
+        "description": "The number that received the call"
+      },
+      {
+        "field": "Calling Number",
+        "description": "The number that initiated the call"
+      }
+    ]
+  },
+  {
+    "title": "Industry-Specific Call Flows",
+    "description": "Examples of common call flows in different industries and how they are reflected in CDR data",
+    "content": [
+      {
+        "industry": "Healthcare",
+        "flow": "A patient calls the main office, is redirected to a department, and then connected to a staff member"
+      },
+      {
+        "industry": "Education",
+        "flow": "A parent calls the school's main line and is directed to the appropriate teacher or administrator"
+      },
+      {
+        "industry": "Retail",
+        "flow": "A customer calls for support and is routed to the correct service agent based on the query"
+      }
+    ]
+  },
+  {
+    "title": "Analyzing CDR Data for Insights",
+    "description": "Guidance on identifying patterns, trends, and anomalies in CDR data across industries",
+    "content": [
+      {
+        "metric": "Call Volume",
+        "description": "The number of calls over a period"
+      },
+      {
+        "metric": "Peak Times",
+        "description": "When the highest number of calls occur"
+      },
+      {
+        "metric": "Call Duration",
+        "description": "Average length of calls"
+      }
+    ]
+  },
+  {
+    "title": "Structuring and Analyzing CDR Data in Power BI",
+    "description": "Best practices for data modeling, visualization, and AI-powered features in Power BI",
+    "content": [
+      {
+        "practice": "Data Modeling",
+        "description": "Create relationships between different data tables to reflect the complexity of call data"
+      },
+      {
+        "practice": "Visualizations",
+        "description": "Develop dashboards that display call volumes, durations, and types over time"
+      },
+      {
+        "practice": "AI Features",
+        "description": "Implement anomaly detection to spot unusual call patterns and forecasting to predict future trends"
+      }
+    ]
+  },
+  {
+    "title": "Industry-Specific Analysis Using Webex Calling CDRs",
+    "description": "Step-by-step guide for conducting industry-specific call analysis with Webex Calling CDRs using Power BI.",
+    "content": [
+      {
+        "step": "Data Import and Modeling",
+        "details": [
+          "Use the Webex Calling API to import CDR data into Power BI.",
+          "Create relationships between call data and other business data (e.g., customer records, sales data).",
+          "Add calculated fields for industry-specific metrics (e.g., call resolution time in customer service)."
+        ]
+      },
+      {
+        "step": "Creating Visualizations",
+        "details": [
+          "Use line charts to visualize call volume trends over time.",
+          "Create heat maps to identify high-activity regions or departments.",
+          "Use pie charts to show the distribution of call types (SIP_MEETING, SIP_INBOUND, etc.)."
+        ]
+      },
+      {
+        "step": "Industry-Specific Analysis",
+        "details": [
+          "Healthcare: Analyze call durations and types to optimize patient appointment scheduling and staff allocation.",
+          "Finance: Monitor international calls (SIP_INTERNATIONAL) to manage global operations and compliance.",
+          "Education: Track inbound calls (SIP_INBOUND) to improve parent-teacher communication and administrative support.",
+          "Customer Service: Evaluate call resolution times and follow-up rates to enhance customer satisfaction."
+        ]
+      },
+      {
+        "step": "Implementing AI Features",
+        "details": [
+          "Set up alerts for unusual call patterns that may indicate issues like fraud or system malfunctions.",
+          "Use time-series analysis to predict future call volumes for better resource planning."
+        ]
+      },
+      {
+        "step": "Sharing Insights",
+        "details": [
+          "Create interactive dashboards tailored to different stakeholders (e.g., management, IT, customer service).",
+          "Generate automated reports with key findings and recommendations for each industry sector."
+        ]
+      },
+      {
+        "step": "Actionable Strategies",
+        "details": [
+          "Develop targeted communication strategies based on call analysis.",
+          "Adjust staffing and infrastructure based on predicted call volumes and patterns.",
+          "Implement improvements in customer interaction based on insights from call data."
+        ]
+      }
+    ]
+  },
+  {
+    "title": "Webex Calling CDR Schema",
+    "description": "Detailed schema for Webex Calling call detail records (CDRs)",
+    "fields": [
+      {
+        "name": "Answer indicator",
+        "type": "string",
+        "description": "Whether the call leg was answered after a redirection. Possible values: Yes, No, Yes-PostRedirection"
+      },
+      {
+        "name": "Answer time",
+        "type": "string",
+        "description": "The time the call was answered. Time is in UTC."
+      },
+      {
+        "name": "Answered",
+        "type": "string",
+        "description": "Whether the call leg was answered. For example, in a hunt group case, some legs will be unanswered, and one will be answered."
+      },
+      {
+        "name": "Authorization code",
+        "type": "string",
+        "description": "The authorization code admin created for a location or site for users to use. Collected by the Account/Authorization Codes or Enhanced Outgoing Calling Plan services."
+      },
+      {
+        "name": "Call ID",
+        "type": "string",
+        "description": "SIP Call ID used to identify the call. You can share the Call ID with Cisco TAC to help them pinpoint a call if necessary."
+      },
+      {
+        "name": "Call outcome",
+        "type": "string",
+        "description": "Identifies whether the call was set up or disconnected normally. Possible values: Success, Failure, Refusal"
+      },
+      {
+        "name": "Call outcome reason",
+        "type": "string",
+        "description": "Additional information about the Call outcome returned."
+      },
+      {
+        "name": "Call transfer Time",
+        "type": "string",
+        "description": "Indicates the time at which the call transfer service was invoked during the call. The invocation time is shown using the UTC/GMT time zone format."
+      },
+      {
+        "name": "Call type",
+        "type": "string",
+        "description": "Type of call. For example: SIP_MEETING, SIP_INTERNATIONAL, SIP_SHORTCODE, SIP_INBOUND, UNKNOWN, SIP_EMERGENCY, SIP_PREMIUM, SIP_ENTERPRISE, SIP_TOLLFREE, SIP_NATIONAL, SIP_MOBILE"
+      },
+      {
+        "name": "Called line ID",
+        "type": "string",
+        "description": "For incoming calls, the calling line ID of the user. For outgoing calls, it's the calling line ID of the called party."
+      },
+      {
+        "name": "Called number",
+        "type": "string",
+        "description": "For incoming calls, the telephone number of the user. For outgoing calls, it's the telephone number of the called party."
+      },
+      {
+        "name": "Calling line ID",
+        "type": "string",
+        "description": "For incoming calls, the calling line ID of the calling party. For outgoing calls, it's the calling line ID of the user."
+      },
+      {
+        "name": "Calling number",
+        "type": "string",
+        "description": "For incoming calls, the telephone number of the calling party. For outgoing calls, it's the telephone number of the user."
+      },
+      {
+        "name": "Client type",
+        "type": "string",
+        "description": "The type of client that the user (creating this record) is using to make or receive the call. For example: SIP, WXC_CLIENT, WXC_THIRD_PARTY, TEAMS_WXC_CLIENT, WXC_DEVICE, WXC_SIP_GW"
+      },
+      {
+        "name": "Client version",
+        "type": "string",
+        "description": "The version of the client that the user (creating this record) is using to make or receive the call."
+      },
+      {
+        "name": "Correlation ID",
+        "type": "string",
+        "description": "Correlation ID to tie together multiple call legs of the same call session."
+      },
+      {
+        "name": "Department ID",
+        "type": "string",
+        "description": "A unique identifier for the user's department name."
+      },
+      {
+        "name": "Device MAC",
+        "type": "string",
+        "description": "The MAC address of the device, if known."
+      },
+      {
+        "name": "Dialed digits",
+        "type": "string",
+        "description": "The keypad digits as dialed by the user, before pre-translations. This field reports multiple call dial possibilities."
+      },
+      {
+        "name": "Direction",
+        "type": "string",
+        "description": "Whether the call was inbound or outbound. The possible values are: ORIGINATING, TERMINATING"
+      },
+      {
+        "name": "Duration",
+        "type": "number",
+        "description": "The length of the call in seconds."
+      },
+      {
+        "name": "Final local SessionID",
+        "type": "string",
+        "description": "The value of the Local Session ID at the end of the call."
+      },
+      {
+        "name": "Final remote SessionID",
+        "type": "string",
+        "description": "The value of the Remote Session ID at the end of the call."
+      },
+      {
+        "name": "Inbound trunk",
+        "type": "string",
+        "description": "Inbound trunk may be presented in Originating and Terminating records."
+      },
+      {
+        "name": "International country",
+        "type": "string",
+        "description": "The country code of the dialed number. This is only populated for international calls."
+      },
+      {
+        "name": "Local call ID",
+        "type": "string",
+        "description": "A unique identifier that is used to correlate CDRs and call legs with each other."
+      },
+      {
+        "name": "Local SessionID",
+        "type": "string",
+        "description": "Universally Unique Identifier (UUID) generated from the Originating user agent."
+      },
+      {
+        "name": "Location",
+        "type": "string",
+        "description": "Location of the report."
+      },
+      {
+        "name": "Model",
+        "type": "string",
+        "description": "The device model type the user is using to make or receive the call."
+      },
+      {
+        "name": "Network call ID",
+        "type": "string",
+        "description": "A unique identifier that shows if other CDRs are in the same call leg. Two CDRs belong in the same call leg if they have the same Network call ID."
+      },
+      {
+        "name": "Org UUID",
+        "type": "string",
+        "description": "A unique identifier for the organization that made the call. This is a unique identifier across Cisco."
+      },
+      {
+        "name": "Original reason",
+        "type": "string",
+        "description": "Call redirection reason for the original called number."
+      },
+      {
+        "name": "OS type",
+        "type": "string",
+        "description": "The operating system that the app was running on, if available."
+      },
+      {
+        "name": "Outbound trunk",
+        "type": "string",
+        "description": "Outbound trunk may be presented in Originating and Terminating records."
+      },
+      {
+        "name": "Release time",
+        "type": "string",
+        "description": "The time the call was finished, in UTC."
+      },
+      {
+        "name": "Ring duration",
+        "type": "number",
+        "description": "The length of ringing before the call was answered or timed out, in seconds."
+      },
+      {
+        "name": "Redirect reason",
+        "type": "string",
+        "description": "Call Redirection Reason for the redirecting number."
+      },
+      {
+        "name": "Redirecting number",
+        "type": "string",
+        "description": "When the call has been redirected one or more times, this field reports the last redirecting number. Identifies who last redirected the call."
+      },
+      {
+        "name": "Related call ID",
+        "type": "string",
+        "description": "Call identifier of a different call that was created by this call because of a service activation. The value is the same as the Local call ID field of the related call."
+      },
+      {
+        "name": "Related reason",
+        "type": "string",
+        "description": "Indicates a trigger that led to a change in the call presence. The trigger could be for this particular call or redirected via a different call."
+      },
+      {
+        "name": "Releasing party",
+        "type": "string",
+        "description": "Indicates which party released the call first. The possible values are: Local, Remote, Unknown"
+      },
+      {
+        "name": "Remote call ID",
+        "type": "string",
+        "description": "A unique identifier that is used to correlate CDRs and call legs with each other. This ID is used in conjunction with Local call ID to identity the local CDR of a call leg."
+      },
+      {
+        "name": "Remote SessionID",
+        "type": "string",
+        "description": "Universally Unique Identifier (UUID) generated from the Terminating user agent."
+      },
+      {
+        "name": "Report ID",
+        "type": "string",
+        "description": "A unique ID for this particular record. This can be used when processing records to aid in deduplication."
+      },
+      {
+        "name": "Report time",
+        "type": "string",
+        "description": "The time this report was created. Time is in UTC."
+      },
+      {
+        "name": "Route group",
+        "type": "string",
+        "description": "If present, this field's only reported in Originating records. Route group identifies the route group used for outbound calls routed via a route group to Premises-based PSTN or an on-prem deployment integrated with Webex Calling (dial plan or unknown extension)."
+      },
+      {
+        "name": "Site main number",
+        "type": "string",
+        "description": "The main number for the user's site where the call was made or received."
+      },
+      {
+        "name": "Site timezone",
+        "type": "string",
+        "description": "Site timezone is the offset in minutes from UTC time of the user's timezone."
+      },
+      {
+        "name": "Site UUID",
+        "type": "string",
+        "description": "A unique identifier for the site associated with the call. Unique across Cisco products."
+      },
+      {
+        "name": "Start time",
+        "type": "string",
+        "description": "This is the start time of the call, the answer time may be slightly after this. Time is in UTC."
+      },
+      {
+        "name": "Sub client type",
+        "type": "string",
+        "description": "If the call is TO or FROM a mobile phone using Webex Go, the Client type will show SIP, and Sub client type will show MOBILE_NETWORK."
+      },
+      {
+        "name": "Transfer related call ID",
+        "type": "string",
+        "description": "Call identifier of a different call that was involved in the transfer. You can share this ID with Cisco TAC to help them pinpoint parties who were involved in the call transfer."
+      },
+      {
+        "name": "User",
+        "type": "string",
+        "description": "The user who made or received the call."
+      },
+      {
+        "name": "User number",
+        "type": "string",
+        "description": "Represents the E.164 number of the user generating a CDR. If the user has no number assigned to them, then their extension will be displayed instead."
+      },
+      {
+        "name": "User type",
+        "type": "string",
+        "description": "The type of user (user or workspace) that made or received the call."
+      },
+      {
+        "name": "User UUID",
+        "type": "string",
+        "description": "A unique identifier for the user associated with the call. This is a unique identifier across Cisco products."
+      }
+    ]
+  }
+]
